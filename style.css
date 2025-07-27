@@ -79,3 +79,13 @@ main {
   font-size: 20px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 640px) {
+  .move-container {
+    gap: 10px;
+  }
+  .move-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
