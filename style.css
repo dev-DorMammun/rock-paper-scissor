@@ -2,6 +2,58 @@ body {
   background-color: hsl(0, 0%, 9%);
   font-family: Inter;
 }
+@keyframes animate1 {
+  17% {
+    transform: rotate(45deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  84% {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes animate2 {
+  17% {
+    transform: rotate(-45deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  84% {
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.animateL {
+  animation-name: animate2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+.animateR {
+  animation-name: animate1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
 .hand {
   width: 100px;
 }
