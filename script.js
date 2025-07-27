@@ -24,9 +24,6 @@ function execution() {
   }, 3000);
 
   setTimeout(() => {
-    left.src = `./images/left/${name}.png`;
-    right.src = `./images/right/${array[guess]}.png`;
-
     if (name == array[0]) {
       if (guess == 0) {
         decision.textContent = "Draw";
