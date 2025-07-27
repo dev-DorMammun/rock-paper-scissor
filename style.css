@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 .text {
   text-align: center;
@@ -20,12 +20,12 @@ body {
 }
 main {
   border-radius: 20px;
-  margin-top: 20vh;
+  margin-top: calc((100vh - 600px) / 2);
 }
 .container {
   border: 1px solid rgba(117, 117, 255, 0.356);
   display: grid;
-  grid-template-columns: 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 30px;
   border-radius: 20px 20px 0 0;
   background-color: rgba(106, 106, 255, 0.11);
@@ -65,7 +65,7 @@ main {
   transform: scale(1.1);
 }
 .absolute {
-  border: 2px solid white;
+  border: 1px solid hsl(0, 0%, 40%);
   height: 50px;
   width: 200px;
   position: relative;
