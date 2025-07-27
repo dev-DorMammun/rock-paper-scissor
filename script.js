@@ -14,16 +14,14 @@ function execution() {
   left.classList.add("animateL");
   right.classList.add("animateR");
 
-  setTimeout(() => {
-    left.classList.remove("animateL");
-    right.classList.remove("animateR");
-  }, 3000);
-
   let name = this.textContent;
   name = name.trim();
   let guess = Math.floor(Math.random() * 3);
 
   setTimeout(() => {
+    left.classList.remove("animateL");
+    right.classList.remove("animateR");
+
     left.src = `./images/left/${name}.png`;
     right.src = `./images/right/${array[guess]}.png`;
 
