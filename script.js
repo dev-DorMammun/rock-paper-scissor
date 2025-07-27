@@ -53,7 +53,7 @@ function execution() {
           decision.textContent = "You won";
         }
       }
-    }, 100);
+    }, 3100);
   }, 3000);
 }
 
