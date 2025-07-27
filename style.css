@@ -47,13 +47,11 @@ body {
   animation-iteration-count: 1;
 }
 .hand {
-  .hand {
-    width: 100px;
-    display: block; /* prevent inline img transform bugs */
-    backface-visibility: hidden; /* avoid disappearing on rotate */
-    transform-style: preserve-3d;
-    will-change: transform;
-  }
+  width: 100px;
+  display: block; /* prevent inline img transform bugs */
+  backface-visibility: hidden; /* avoid disappearing on rotate */
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .upper-screen {
   display: flex;
