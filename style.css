@@ -17,10 +17,6 @@ body {
   }
   84% {
     transform: rotate(45deg);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.3;
   }
 }
 @keyframes animate2 {
@@ -38,10 +34,6 @@ body {
   }
   84% {
     transform: rotate(-45deg);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.3;
   }
 }
 .animateL {
