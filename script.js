@@ -21,40 +21,40 @@ function execution() {
   setTimeout(() => {
     left.classList.remove("animateL");
     right.classList.remove("animateR");
-
-    setTimeout(() => {
-      left.src = `./images/left/${name}.png`;
-      right.src = `./images/right/${array[guess]}.png`;
-
-      if (name == array[0]) {
-        if (guess == 0) {
-          decision.textContent = "Draw";
-        } else if (guess == 1) {
-          decision.textContent = "You lost";
-        } else {
-          decision.textContent = "You won";
-        }
-      }
-      if (name == array[1]) {
-        if (guess == 1) {
-          decision.textContent = "Draw";
-        } else if (guess == 2) {
-          decision.textContent = "You lost";
-        } else {
-          decision.textContent = "You won";
-        }
-      }
-      if (name == array[2]) {
-        if (guess == 2) {
-          decision.textContent = "Draw";
-        } else if (guess == 0) {
-          decision.textContent = "You lost";
-        } else {
-          decision.textContent = "You won";
-        }
-      }
-    }, 3100);
   }, 3000);
+
+  setTimeout(() => {
+    left.src = `./images/left/${name}.png`;
+    right.src = `./images/right/${array[guess]}.png`;
+
+    if (name == array[0]) {
+      if (guess == 0) {
+        decision.textContent = "Draw";
+      } else if (guess == 1) {
+        decision.textContent = "You lost";
+      } else {
+        decision.textContent = "You won";
+      }
+    }
+    if (name == array[1]) {
+      if (guess == 1) {
+        decision.textContent = "Draw";
+      } else if (guess == 2) {
+        decision.textContent = "You lost";
+      } else {
+        decision.textContent = "You won";
+      }
+    }
+    if (name == array[2]) {
+      if (guess == 2) {
+        decision.textContent = "Draw";
+      } else if (guess == 0) {
+        decision.textContent = "You lost";
+      } else {
+        decision.textContent = "You won";
+      }
+    }
+  }, 3200);
 }
 
 document.querySelector(".rock").addEventListener("click", execution);
