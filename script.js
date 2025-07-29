@@ -54,7 +54,7 @@ function execution() {
         decision.textContent = "You won";
       }
     }
-  }, 3200);
+  }, 3500);
 }
 
 document.querySelector(".rock").addEventListener("click", execution);
