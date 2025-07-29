@@ -21,6 +21,8 @@ function execution() {
   setTimeout(() => {
     left.classList.remove("animateL");
     right.classList.remove("animateR");
+    left.src = ``;
+    right.src = ``;
   }, 3000);
 
   setTimeout(() => {
@@ -54,7 +56,7 @@ function execution() {
         decision.textContent = "You won";
       }
     }
-  }, 3500);
+  }, 3001);
 }
 
 document.querySelector(".rock").addEventListener("click", execution);
